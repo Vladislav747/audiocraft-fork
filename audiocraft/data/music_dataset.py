@@ -52,6 +52,15 @@ class MusicInfo(AudioInfo):
     self_wav: tp.Optional[WavCondition] = None
     # dict mapping attributes names to tuple of wav, text and metadata
     joint_embed: tp.Dict[str, JointEmbedCondition] = field(default_factory=dict)
+    # new attributes
+    general_mood: tp.Optional[str] = None
+    genre_tags: list[str] = field(default_factory=list)
+    lead_instrument: tp.Optional[str] = None
+    accompaniment: tp.Optional[str] = None
+    tempo_and_rhythm: tp.Optional[str] = None
+    vocal_presence: tp.Optional[str] = None
+    production_quality: tp.Optional[str] = None
+
 
     @property
     def has_music_meta(self) -> bool:
@@ -78,11 +87,11 @@ class MusicInfo(AudioInfo):
             preprocess_func = get_bpm
         elif attribute == 'key':
             preprocess_func = get_musical_key
-        elif attribute in ['moods', 'keywords']:
+        elif attribute in ['moods', 'keywords', 'genre_tags']:
             preprocess_func = get_keyword_list
         elif attribute in ['genre', 'name', 'instrument']:
             preprocess_func = get_keyword
-        elif attribute in ['title', 'artist', 'description']:
+        elif attribute in ['title', 'artist', 'description', 'general_mood', 'lead_instrument', 'accompaniment', 'tempo_and_rhythm', 'vocal_presence', 'production_quality']:
             preprocess_func = get_string
         else:
             preprocess_func = None
