@@ -138,9 +138,15 @@ def augment_music_info_description(music_info: MusicInfo, merge_text_p: float = 
         MusicInfo: The MusicInfo with augmented textual description.
     """
     def is_valid_field(field_name: str, field_value: tp.Any) -> bool:
-        valid_field_name = field_name in ['key', 'bpm', 'genre', 'moods', 'instrument', 'keywords']
+        valid_field_name = field_name in [
+            "key", "bpm", "genre", "moods", "instrument", "keywords",
+            "general_mood", "genre_tags", "lead_instrument",
+            "accompaniment", "tempo_and_rhythm", "vocal_presence",
+            "production_quality",
+        ]
         valid_field_value = field_value is not None and isinstance(field_value, (int, float, str, list))
-        keep_field = random.uniform(0, 1) < drop_other_p
+        # попробовать иное поведение drop_other_p
+        keep_field = random.uniform(0, 1) >= drop_other_p
         return valid_field_name and valid_field_value and keep_field
 
     def process_value(v: tp.Any) -> str:
