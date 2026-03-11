@@ -14,13 +14,18 @@ Unlike regular PyTorch Transformer, we make the hard choice that batches are fir
 """
 
 import typing as tp
+import warnings
 
 from einops import rearrange
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
 from torch.utils.checkpoint import checkpoint as torch_checkpoint
-from xformers import ops
+# на MacOs нельзя использовать gpu с xformers - правки чтобы все работало на маке
+try:
+    from xformers import ops
+except ImportError:  # pragma: no cover
+    ops = None
 
 from .rope import RotaryEmbedding
 from .streaming import StreamingModule
@@ -188,7 +193,16 @@ class StreamingMultiheadAttention(StreamingModule):
             assert rope is None, "Rope cannot work with cross attention."
 
         if memory_efficient:
-            _verify_xformers_memory_efficient_compat()
+            # на MacOs нельзя использовать gpu с xformers - правки чтобы все работало на маке
+            try:
+                _verify_xformers_memory_efficient_compat()
+            except ImportError:
+                warnings.warn(
+                    "xformers is not installed; fallback to memory_efficient=False.",
+                    RuntimeWarning,
+                )
+                memory_efficient = False
+                self.memory_efficient = False
 
         self.custom = _is_custom(custom, memory_efficient)
         if self.custom:
@@ -371,7 +385,11 @@ class StreamingMultiheadAttention(StreamingModule):
                     else:
                         bound_layout = "b t p h d"
                     packed = rearrange(projected, f"b t (p h d) -> {bound_layout}", p=3, h=self.num_heads)
-                    q, k, v = ops.unbind(packed, dim=2)
+                    # на MacOs нельзя использовать gpu с xformers - правки чтобы все работало на маке
+                    if ops is None:
+                        q, k, v = torch.unbind(packed, dim=2)
+                    else:
+                        q, k, v = ops.unbind(packed, dim=2)
                 else:
                     embed_dim = self.embed_dim
                     per_head_dim = (embed_dim // self.num_heads)
@@ -413,6 +431,13 @@ class StreamingMultiheadAttention(StreamingModule):
                     x = torch.nn.functional.scaled_dot_product_attention(
                         q, k, v, is_causal=attn_mask is not None, dropout_p=p)
                 else:
+                    # на MacOs нельзя использовать gpu с xformers - правки чтобы все работало на маке
+                    if ops is None:
+                        raise ImportError(
+                            "xformers backend requested but xformers is not installed. "
+                            "Use efficient_attention_backend=torch and "
+                            "transformer_lm.memory_efficient=false."
+                        )
                     x = ops.memory_efficient_attention(q, k, v, attn_mask, p=p)
             else:
                 # We include the dot product as float32, for consistency
