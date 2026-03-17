@@ -1,0 +1,22 @@
+[[36m03-11 00:47:00[0m][[34mdora.distrib[0m][[32mINFO[0m] - world_size is 1, skipping init.[0m
+[[36m03-11 00:47:00[0m][[34mflashy.solver[0m][[32mINFO[0m] - Instantiating solver MusicGenSolver for XP 9a388a0d[0m
+[[36m03-11 00:47:00[0m][[34mflashy.solver[0m][[32mINFO[0m] - All XP logs are stored in /Users/vlad/Documents/Web/audiocraft-fork/outputs/xps/9a388a0d[0m
+[[36m03-11 00:47:00[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split train: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_train.jsonl.gz[0m
+[[36m03-11 00:47:00[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split valid: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_valid.jsonl.gz[0m
+[[36m03-11 00:47:00[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split evaluate: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_valid.jsonl.gz[0m
+[[36m03-11 00:47:00[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split generate: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_valid.jsonl.gz[0m
+[[36m03-11 00:47:00[0m][[34mroot[0m][[32mINFO[0m] - Getting pretrained compression model from HF facebook/encodec_32khz[0m
+[[36m03-11 00:47:02[0m][[34mflashy.solver[0m][[32mINFO[0m] - Compression model has 4 codebooks with 2048 cardinality, and a framerate of 50[0m
+[[36m03-11 00:47:02[0m][[34maudiocraft.modules.conditioners[0m][[33mWARNING[0m] - T5 has no autocast, this might lead to NaN[0m
+[[36m03-11 00:49:08[0m][[34mdora.distrib[0m][[32mINFO[0m] - world_size is 1, skipping init.[0m
+[[36m03-11 00:49:08[0m][[34mflashy.solver[0m][[32mINFO[0m] - Instantiating solver MusicGenSolver for XP 9a388a0d[0m
+[[36m03-11 00:49:08[0m][[34mflashy.solver[0m][[32mINFO[0m] - All XP logs are stored in /Users/vlad/Documents/Web/audiocraft-fork/outputs/xps/9a388a0d[0m
+[[36m03-11 00:49:08[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split train: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_train.jsonl.gz[0m
+[[36m03-11 00:49:08[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split valid: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_valid.jsonl.gz[0m
+[[36m03-11 00:49:08[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split evaluate: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_valid.jsonl.gz[0m
+[[36m03-11 00:49:08[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split generate: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_valid.jsonl.gz[0m
+[[36m03-11 00:49:08[0m][[34mroot[0m][[32mINFO[0m] - Getting pretrained compression model from HF facebook/encodec_32khz[0m
+[[36m03-11 00:49:10[0m][[34mflashy.solver[0m][[32mINFO[0m] - Compression model has 4 codebooks with 2048 cardinality, and a framerate of 50[0m
+[[36m03-11 00:49:10[0m][[34maudiocraft.modules.conditioners[0m][[33mWARNING[0m] - T5 has no autocast, this might lead to NaN[0m
+[[36m03-11 00:49:43[0m][[34maudiocraft.optim.dadam[0m][[32mINFO[0m] - Using decoupled weight decay[0m
+[[36m03-11 00:49:48[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 1f9899d79e15ff7b43ccdad6ddc5d8a1dad31434[0m

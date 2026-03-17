@@ -1,0 +1,13 @@
+[[36m03-11 00:27:27[0m][[34mdora.distrib[0m][[32mINFO[0m] - world_size is 1, skipping init.[0m
+[[36m03-11 00:28:25[0m][[34mdora.distrib[0m][[32mINFO[0m] - world_size is 1, skipping init.[0m
+[[36m03-11 00:28:26[0m][[34mflashy.solver[0m][[32mINFO[0m] - Instantiating solver MusicGenSolver for XP 73a21ad8[0m
+[[36m03-11 00:28:26[0m][[34mflashy.solver[0m][[32mINFO[0m] - All XP logs are stored in /Users/vlad/Documents/Web/audiocraft-fork/outputs/xps/73a21ad8[0m
+[[36m03-11 00:28:26[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split train: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_train.jsonl.gz[0m
+[[36m03-11 00:37:53[0m][[34mdora.distrib[0m][[32mINFO[0m] - world_size is 1, skipping init.[0m
+[[36m03-11 00:37:53[0m][[34mflashy.solver[0m][[32mINFO[0m] - Instantiating solver MusicGenSolver for XP 73a21ad8[0m
+[[36m03-11 00:37:53[0m][[34mflashy.solver[0m][[32mINFO[0m] - All XP logs are stored in /Users/vlad/Documents/Web/audiocraft-fork/outputs/xps/73a21ad8[0m
+[[36m03-11 00:37:53[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split train: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_train.jsonl.gz[0m
+[[36m03-11 00:37:53[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split valid: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_valid.jsonl.gz[0m
+[[36m03-11 00:37:53[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split evaluate: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_valid.jsonl.gz[0m
+[[36m03-11 00:37:53[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split generate: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_valid.jsonl.gz[0m
+[[36m03-11 00:37:53[0m][[34mroot[0m][[32mINFO[0m] - Getting pretrained compression model from HF facebook/encodec_32khz[0m

@@ -1,0 +1,51 @@
+[[36m03-11 00:56:51[0m][[34mdora.distrib[0m][[32mINFO[0m] - world_size is 1, skipping init.[0m
+[[36m03-11 00:56:52[0m][[34mflashy.solver[0m][[32mINFO[0m] - Instantiating solver MusicGenSolver for XP ae9e9599[0m
+[[36m03-11 00:56:52[0m][[34mflashy.solver[0m][[32mINFO[0m] - All XP logs are stored in /Users/vlad/Documents/Web/audiocraft-fork/outputs/xps/ae9e9599[0m
+[[36m03-11 00:56:52[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split train: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_train.jsonl.gz[0m
+[[36m03-11 00:56:52[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split valid: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_valid.jsonl.gz[0m
+[[36m03-11 00:56:52[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split evaluate: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_valid.jsonl.gz[0m
+[[36m03-11 00:56:52[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split generate: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_valid.jsonl.gz[0m
+[[36m03-11 00:56:52[0m][[34mroot[0m][[32mINFO[0m] - Getting pretrained compression model from HF facebook/encodec_32khz[0m
+[[36m03-11 00:56:53[0m][[34mflashy.solver[0m][[32mINFO[0m] - Compression model has 4 codebooks with 2048 cardinality, and a framerate of 50[0m
+[[36m03-11 00:57:07[0m][[34maudiocraft.optim.dadam[0m][[32mINFO[0m] - Using decoupled weight decay[0m
+[[36m03-11 00:57:10[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 0d0e5e3bc03a80bb6821a238ae3d3819d863f599[0m
+[[36m03-11 00:57:11[0m][[34mflashy.solver[0m][[32mINFO[0m] - Initializing EMA on the model with decay = 0.99 every 10 updates[0m
+[[36m03-11 00:57:11[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model size: 420.37 M params[0m
+[[36m03-11 00:57:11[0m][[34mflashy.solver[0m][[32mINFO[0m] - Base memory usage, with model, grad and optim: 6.73 GB[0m
+[[36m03-11 00:57:11[0m][[34mflashy.solver[0m][[32mINFO[0m] - Restoring weights and history.[0m
+[[36m03-11 00:57:15[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 0d0e5e3bc03a80bb6821a238ae3d3819d863f599[0m
+[[36m03-11 00:57:34[0m][[34maudiocraft.modules.codebooks_patterns[0m][[32mINFO[0m] - New pattern, time steps: 500, sequence steps: 504[0m
+[[36m03-11 01:02:29[0m][[34mdora.distrib[0m][[32mINFO[0m] - world_size is 1, skipping init.[0m
+[[36m03-11 01:02:29[0m][[34mflashy.solver[0m][[32mINFO[0m] - Instantiating solver MusicGenSolver for XP ae9e9599[0m
+[[36m03-11 01:02:29[0m][[34mflashy.solver[0m][[32mINFO[0m] - All XP logs are stored in /Users/vlad/Documents/Web/audiocraft-fork/outputs/xps/ae9e9599[0m
+[[36m03-11 01:02:29[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split train: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_train.jsonl.gz[0m
+[[36m03-11 01:02:29[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split valid: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_valid.jsonl.gz[0m
+[[36m03-11 01:02:29[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split evaluate: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_valid.jsonl.gz[0m
+[[36m03-11 01:02:29[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split generate: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_valid.jsonl.gz[0m
+[[36m03-11 01:02:29[0m][[34mroot[0m][[32mINFO[0m] - Getting pretrained compression model from HF facebook/encodec_32khz[0m
+[[36m03-11 01:02:30[0m][[34mflashy.solver[0m][[32mINFO[0m] - Compression model has 4 codebooks with 2048 cardinality, and a framerate of 50[0m
+[[36m03-11 01:02:47[0m][[34maudiocraft.optim.dadam[0m][[32mINFO[0m] - Using decoupled weight decay[0m
+[[36m03-11 01:02:52[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 0d0e5e3bc03a80bb6821a238ae3d3819d863f599[0m
+[[36m03-11 01:02:53[0m][[34mflashy.solver[0m][[32mINFO[0m] - Initializing EMA on the model with decay = 0.99 every 10 updates[0m
+[[36m03-11 01:02:53[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model size: 420.37 M params[0m
+[[36m03-11 01:02:53[0m][[34mflashy.solver[0m][[32mINFO[0m] - Base memory usage, with model, grad and optim: 6.73 GB[0m
+[[36m03-11 01:02:53[0m][[34mflashy.solver[0m][[32mINFO[0m] - Restoring weights and history.[0m
+[[36m03-11 01:02:55[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 0d0e5e3bc03a80bb6821a238ae3d3819d863f599[0m
+[[36m03-11 01:03:23[0m][[34maudiocraft.modules.codebooks_patterns[0m][[32mINFO[0m] - New pattern, time steps: 500, sequence steps: 504[0m
+[[36m03-11 01:05:16[0m][[34mdora.distrib[0m][[32mINFO[0m] - world_size is 1, skipping init.[0m
+[[36m03-11 01:05:16[0m][[34mflashy.solver[0m][[32mINFO[0m] - Instantiating solver MusicGenSolver for XP ae9e9599[0m
+[[36m03-11 01:05:16[0m][[34mflashy.solver[0m][[32mINFO[0m] - All XP logs are stored in /Users/vlad/Documents/Web/audiocraft-fork/outputs/xps/ae9e9599[0m
+[[36m03-11 01:05:16[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split train: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_train.jsonl.gz[0m
+[[36m03-11 01:05:16[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split valid: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_valid.jsonl.gz[0m
+[[36m03-11 01:05:16[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split evaluate: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_valid.jsonl.gz[0m
+[[36m03-11 01:05:16[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split generate: /Users/vlad/Documents/Web/hw4-dl-audio/data/manifests/musiccaps_valid.jsonl.gz[0m
+[[36m03-11 01:05:16[0m][[34mroot[0m][[32mINFO[0m] - Getting pretrained compression model from HF facebook/encodec_32khz[0m
+[[36m03-11 01:05:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - Compression model has 4 codebooks with 2048 cardinality, and a framerate of 50[0m
+[[36m03-11 01:05:31[0m][[34maudiocraft.optim.dadam[0m][[32mINFO[0m] - Using decoupled weight decay[0m
+[[36m03-11 01:05:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 0d0e5e3bc03a80bb6821a238ae3d3819d863f599[0m
+[[36m03-11 01:05:34[0m][[34mflashy.solver[0m][[32mINFO[0m] - Initializing EMA on the model with decay = 0.99 every 10 updates[0m
+[[36m03-11 01:05:34[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model size: 420.37 M params[0m
+[[36m03-11 01:05:34[0m][[34mflashy.solver[0m][[32mINFO[0m] - Base memory usage, with model, grad and optim: 6.73 GB[0m
+[[36m03-11 01:05:34[0m][[34mflashy.solver[0m][[32mINFO[0m] - Restoring weights and history.[0m
+[[36m03-11 01:05:36[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 0d0e5e3bc03a80bb6821a238ae3d3819d863f599[0m
+[[36m03-11 01:05:51[0m][[34maudiocraft.modules.codebooks_patterns[0m][[32mINFO[0m] - New pattern, time steps: 500, sequence steps: 504[0m
